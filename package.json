@@ -1,0 +1,53 @@
+{
+	"name": "@thasmo/nuxt-boilerplate",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@9.12.3",
+	"engines": {
+		"node": ">=22",
+		"pnpm": ">=9"
+	},
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"prepare": "concurrently --group --prefix-colors 'auto' 'pnpm:prepare:*'",
+		"prepare:nuxt": "nuxt prepare",
+		"prepare:husky": "husky",
+		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
+		"lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
+		"lint:prettier": "prettier --check '**/*.{md,json,yml,yaml}'",
+		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files '**/*.*'",
+		"lint:knip": "knip --no-progress",
+		"storybook": "storybook dev --port 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"nuxt": "^3.14.159"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.5.0",
+		"@nuxt/eslint": "^0.6.1",
+		"@nuxtjs/storybook": "^8.3.2",
+		"@somehow-digital/commitlint-config": "^1.0.0",
+		"@somehow-digital/cspell-dictionary": "^1.0.0",
+		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
+		"@somehow-digital/prettier-config": "^2.0.0",
+		"@somehow-digital/typescript-config": "^2.0.0",
+		"@storybook-vue/nuxt": "^8.3.2",
+		"@storybook/addon-essentials": "^8.4.2",
+		"@storybook/addon-interactions": "^8.4.2",
+		"@storybook/addon-links": "^8.4.2",
+		"@storybook/vue3": "^8.4.2",
+		"concurrently": "^9.1.0",
+		"cspell": "^8.16.0",
+		"eslint": "^9.14.0",
+		"husky": "^9.1.6",
+		"knip": "^5.36.4",
+		"lint-staged": "^15.2.10",
+		"prettier": "^3.3.3",
+		"storybook": "^8.4.2",
+		"typescript": "^5.6.3"
+	}
+}
