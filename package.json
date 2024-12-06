@@ -2,7 +2,7 @@
 	"name": "@thasmo/nuxt-boilerplate",
 	"private": true,
 	"type": "module",
-	"packageManager": "pnpm@9.14.4",
+	"packageManager": "pnpm@9.15.0",
 	"engines": {
 		"node": ">=22",
 		"pnpm": ">=9"
