@@ -41,7 +41,7 @@ importers:
         version: 9.1.7
       knip:
         specifier: ^5.36.4
-        version: 5.39.4(@types/node@22.9.1)(typescript@5.7.2)
+        version: 5.40.0(@types/node@22.9.1)(typescript@5.7.2)
       lint-staged:
         specifier: ^15.2.10
         version: 15.2.11
@@ -2924,8 +2924,8 @@ packages:
     resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
 
-  knip@5.39.4:
-    resolution: {integrity: sha512-IiNFwfe8xDFwuGzBY8lKvrY3hhR1I81iCaJ8nd85cxT7LxB7cDd73WP3MrzZylE9Vec1HhC0YLFiAL7jh5OYEQ==}
+  knip@5.40.0:
+    resolution: {integrity: sha512-EzBfQDz4YBzYnMLueWnaaVr15mneqZs1c3RanttciuVuRcodlNjzAmR2nch/khlRdVABAxAdMGFxfSvhvcH1NA==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
@@ -4506,8 +4506,8 @@ packages:
     peerDependencies:
       zod: ^3.18.0
 
-  zod@3.24.0:
-    resolution: {integrity: sha512-Hz+wiY8yD0VLA2k/+nsg2Abez674dDGTai33SwNvMPuf9uIrBC9eFgIMQxBBbHFxVXi8W+5nX9DcAh9YNSQm/w==}
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -7722,7 +7722,7 @@ snapshots:
 
   klona@2.0.6: {}
 
-  knip@5.39.4(@types/node@22.9.1)(typescript@5.7.2):
+  knip@5.40.0(@types/node@22.9.1)(typescript@5.7.2):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@snyk/github-codeowners': 1.1.0
@@ -7740,8 +7740,8 @@ snapshots:
       strip-json-comments: 5.0.1
       summary: 2.1.0
       typescript: 5.7.2
-      zod: 3.24.0
-      zod-validation-error: 3.4.0(zod@3.24.0)
+      zod: 3.24.1
+      zod-validation-error: 3.4.0(zod@3.24.1)
 
   knitwork@1.1.0: {}
 
@@ -9455,8 +9455,8 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.5.2
 
-  zod-validation-error@3.4.0(zod@3.24.0):
+  zod-validation-error@3.4.0(zod@3.24.1):
     dependencies:
-      zod: 3.24.0
+      zod: 3.24.1
 
-  zod@3.24.0: {}
+  zod@3.24.1: {}
