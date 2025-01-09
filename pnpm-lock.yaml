@@ -41,7 +41,7 @@ importers:
         version: 9.1.7
       knip:
         specifier: ^5.36.4
-        version: 5.41.1(@types/node@22.10.2)(typescript@5.7.2)
+        version: 5.42.0(@types/node@22.10.2)(typescript@5.7.2)
       lint-staged:
         specifier: ^15.2.10
         version: 15.3.0
@@ -930,6 +930,10 @@ packages:
     resolution: {integrity: sha512-ktI9+PxfHYtKjF3cLTUAh2N+b8MijCRPNwKJNqTVdL0gB0QxLU2rIRaZ1t71oEa3YBDE6bukH1sR0+CDnpp/Mg==}
     engines: {node: '>=16.14.0'}
 
+  '@nodelib/fs.scandir@4.0.1':
+    resolution: {integrity: sha512-vAkI715yhnmiPupY+dq+xenu5Tdf2TBQ66jLvBIcCddtz+5Q8LbMKaf9CIJJreez8fQ8fgaY+RaywQx8RJIWpw==}
+    engines: {node: '>=18.18.0'}
+
   '@nodelib/fs.stat@2.0.5':
     resolution: {integrity: sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==}
     engines: {node: '>= 8'}
@@ -938,6 +942,10 @@ packages:
     resolution: {integrity: sha512-2tQOI38s19P9i7X/Drt0v8iMA+KMsgdhB/dyPER+e+2Y8L1Z7QvnuRdW/uLuf5YRFUYmnj4bMA6qCuZHFI1GDQ==}
     engines: {node: '>=16.14.0'}
 
+  '@nodelib/fs.stat@4.0.0':
+    resolution: {integrity: sha512-ctr6bByzksKRCV0bavi8WoQevU6plSp2IkllIsEqaiKe2mwNNnaluhnRhcsgGZHrrHk57B3lf95MkLMO3STYcg==}
+    engines: {node: '>=18.18.0'}
+
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
@@ -945,6 +953,10 @@ packages:
   '@nodelib/fs.walk@2.0.0':
     resolution: {integrity: sha512-54voNDBobGdMl3BUXSu7UaDh1P85PGHWlJ5e0XhPugo1JulOyCtp2I+5ri4wplGDJ8QGwPEQW7/x3yTLU7yF1A==}
     engines: {node: '>=16.14.0'}
+
+  '@nodelib/fs.walk@3.0.1':
+    resolution: {integrity: sha512-nIh/M6Kh3ZtOmlY00DaUYB4xeeV6F3/ts1l29iwl3/cfyY/OuCfUx+v08zgx8TKPTifXRcjjqVQ4KB2zOYSbyw==}
+    engines: {node: '>=18.18.0'}
 
   '@nuxt/devalue@2.0.2':
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
@@ -2400,8 +2412,8 @@ packages:
   fast-fifo@1.3.2:
     resolution: {integrity: sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==}
 
-  fast-glob@3.3.2:
-    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
+  fast-glob@3.3.3:
+    resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
     engines: {node: '>=8.6.0'}
 
   fast-json-stable-stringify@2.1.0:
@@ -2896,9 +2908,9 @@ packages:
     resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
 
-  knip@5.41.1:
-    resolution: {integrity: sha512-yNpCCe2REU7U3VRvMASnXSEtfEC2HmOoDW9Vp9teQ9FktJYnuagvSZD3xWq8Ru7sPABkmvbC5TVWuMzIaeADNA==}
-    engines: {node: '>=18.6.0'}
+  knip@5.42.0:
+    resolution: {integrity: sha512-/+/GV+oIJ0A2l2LBaiHvp4sGj448T1EMQm2S1I6sPh9AIR9riBaYY19ZYq743Ql/GR0lgwwGoQ2UKNp0B93HNA==}
+    engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
       '@types/node': '>=18'
@@ -5253,7 +5265,7 @@ snapshots:
       chokidar: 4.0.3
       esbuild: 0.24.2
       eslint: 9.17.0(jiti@2.4.2)
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       find-up: 7.0.0
       get-port-please: 3.1.2
       h3: 1.13.0
@@ -5388,9 +5400,16 @@ snapshots:
       '@nodelib/fs.stat': 3.0.0
       run-parallel: 1.2.0
 
+  '@nodelib/fs.scandir@4.0.1':
+    dependencies:
+      '@nodelib/fs.stat': 4.0.0
+      run-parallel: 1.2.0
+
   '@nodelib/fs.stat@2.0.5': {}
 
   '@nodelib/fs.stat@3.0.0': {}
+
+  '@nodelib/fs.stat@4.0.0': {}
 
   '@nodelib/fs.walk@1.2.8':
     dependencies:
@@ -5400,6 +5419,11 @@ snapshots:
   '@nodelib/fs.walk@2.0.0':
     dependencies:
       '@nodelib/fs.scandir': 3.0.0
+      fastq: 1.18.0
+
+  '@nodelib/fs.walk@3.0.1':
+    dependencies:
+      '@nodelib/fs.scandir': 4.0.1
       fastq: 1.18.0
 
   '@nuxt/devalue@2.0.2': {}
@@ -6002,7 +6026,7 @@ snapshots:
       '@typescript-eslint/types': 8.18.2
       '@typescript-eslint/visitor-keys': 8.18.2
       debug: 4.4.0(supports-color@9.4.0)
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
       semver: 7.6.3
@@ -7246,7 +7270,7 @@ snapshots:
 
   fast-fifo@1.3.2: {}
 
-  fast-glob@3.3.2:
+  fast-glob@3.3.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.5
       '@nodelib/fs.walk': 1.2.8
@@ -7431,7 +7455,7 @@ snapshots:
   globby@14.0.2:
     dependencies:
       '@sindresorhus/merge-streams': 2.3.0
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       ignore: 5.3.2
       path-type: 5.0.0
       slash: 5.1.0
@@ -7695,14 +7719,14 @@ snapshots:
 
   klona@2.0.6: {}
 
-  knip@5.41.1(@types/node@22.10.2)(typescript@5.7.2):
+  knip@5.42.0(@types/node@22.10.2)(typescript@5.7.2):
     dependencies:
-      '@nodelib/fs.walk': 1.2.8
+      '@nodelib/fs.walk': 3.0.1
       '@snyk/github-codeowners': 1.1.0
       '@types/node': 22.10.2
       easy-table: 1.2.0
       enhanced-resolve: 5.18.0
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       jiti: 2.4.2
       js-yaml: 4.1.0
       minimist: 1.2.8
@@ -9099,7 +9123,7 @@ snapshots:
       acorn: 8.14.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       local-pkg: 0.5.1
       magic-string: 0.30.17
       mlly: 1.7.3
@@ -9121,7 +9145,7 @@ snapshots:
       '@vue-macros/common': 1.15.1(rollup@4.29.1)(vue@3.5.13(typescript@5.7.2))
       ast-walker-scope: 0.6.2
       chokidar: 3.6.0
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       json5: 2.2.3
       local-pkg: 0.5.1
       magic-string: 0.30.17
@@ -9245,7 +9269,7 @@ snapshots:
       chalk: 4.1.2
       chokidar: 3.6.0
       commander: 8.3.0
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       fs-extra: 11.2.0
       npm-run-path: 4.0.1
       strip-ansi: 6.0.1
